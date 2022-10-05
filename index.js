@@ -4,11 +4,7 @@
 
 const {google} = require('googleapis');
 require('dotenv').config();
-const {CLIENT_EMAIL, PRIVATE_KEY} = process.env;
-console.log("Client email:", CLIENT_EMAIL);
-console.log("Private Key:", PRIVATE_KEY);
-const CALENDAR_ID = '60d6393c80c8ec51a78ef097825197af272744930b66021608ab84459113fc62@group.calendar.google.com';
-// const KEYFILE = 'my-project-calendar-364306-9b5671b92dfc.json'; // path to JSON with private key been downloaded from Google
+const {CLIENT_EMAIL, PRIVATE_KEY, CALENDAR_ID} = process.env;
 const SCOPE_CALENDAR = 'https://www.googleapis.com/auth/calendar'; // authorization / scopes
 const SCOPE_EVENTS = 'https://www.googleapis.com/auth/calendar.events';
 
